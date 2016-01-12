@@ -1,4 +1,4 @@
-evelopment:
+development:
   adapter: postgresql
   encoding: utf8
   database: project_development
