@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :mailers, only: [:create]
 
+  get "/sent", to: "mailers#sent"
+
 end
