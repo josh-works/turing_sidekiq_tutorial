@@ -12,7 +12,6 @@ body {
     color: white;
 }
 
-
 .container {
   margin: 5%;
 }
@@ -24,4 +23,12 @@ body {
 .box {
   background-color:rgba(0,0,0,0.5);
   padding: 30px;
+}
+
+.form {
+  margin-left: 25%;
+}
+
+#flash_message {
+  background-color: green;
 }

@@ -5,9 +5,9 @@ class GiphyService
 
   def search(input)
     begin
-      JSON.parse(get_search(input).body)["data"].first["images"]["fixed_height"]["url"]
+      parse(get_search(input))["data"].first["images"]["fixed_height"]["url"]
     rescue
-      JSON.parse(random.body)["data"]["image_url"]
+      parse(random)["data"]["image_url"]
     end
   end
 
@@ -20,6 +20,12 @@ class GiphyService
   def random
     @connection.query["api_key"] = "dc6zaTOxFJmzC"
     @connection.get("random")
+  end
+
+  private
+
+  def parse(data)
+    JSON.parse(data.body)
   end
 
 end
