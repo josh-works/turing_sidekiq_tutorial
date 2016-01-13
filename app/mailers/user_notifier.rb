@@ -1,5 +1,5 @@
 class UserNotifier < ActionMailer::Base
-  default :from => 'any_from_address@example.com'
+  default :from => 'andrew@turing.io'
 
   # send a signup email to the user, pass in the user object that   contains the user's email address
   def send_randomness_email(email, thought)
