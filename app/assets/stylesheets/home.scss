@@ -1,3 +1,27 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    background-image: url('missy-giphy.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+.container {
+  margin: 5%;
+}
+
+.center {
+  text-align: center;
+}
+
+.box {
+  background-color:rgba(0,0,0,0.5);
+  padding: 30px;
+}

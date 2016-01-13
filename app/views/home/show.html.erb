@@ -1,11 +1,15 @@
-<h1>Welcome to Our Random Working-It App</h1>
+<div class="container center box">
+  <h1>Welcome to Our Random Working-It App</h1>
 
-<h3><%= @quote %> - Ron Swanson</h3>
+  <h3 class="container"><%= @quote %> - Ron Swanson</h3>
 
-<%= form_for :mailers, url: mailers_path do |f| %>
-<%= f.label "Email" %>
-<%= f.text_field :email %>
-<%= f.label "Thought??" %>
-<%= f.text_field :thought %>
-<%= f.submit "Give me the randomness..." %>
-<% end %>
+  <h1>
+  <%= form_for :mailers, url: mailers_path do |f| %>
+  <%= f.label "Email" %>
+  <%= f.text_field :email %>
+  <%= f.label "Thought??" %>
+  <%= f.text_field :thought %>
+  <%= f.submit "Give me the randomness..." %>
+  <% end %>
+  </h1>
+</div>

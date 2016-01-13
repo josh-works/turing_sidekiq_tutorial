@@ -3,9 +3,9 @@ class UserNotifier < ActionMailer::Base
 
   # send a signup email to the user, pass in the user object that   contains the user's email address
   def send_randomness_email(email, thought)
-    binding.pry
+    sleep 5
     @email = email
-    @thought = GiphyService.new.search(thought)
+    @thought_image = GiphyService.new.search(thought)
     mail( :to => @email,
     :subject => 'Here is your randomness email of awesome.' )
   end
