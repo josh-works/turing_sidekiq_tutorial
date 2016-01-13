@@ -1,0 +1,51 @@
+/* line 6, /Users/Carmer/Documents/Turing/projects/work-it/app/assets/stylesheets/home.scss */
+body {
+  background-image: url("missy-giphy.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+/* line 15, /Users/Carmer/Documents/Turing/projects/work-it/app/assets/stylesheets/home.scss */
+.container {
+  margin: 5%;
+}
+
+/* line 19, /Users/Carmer/Documents/Turing/projects/work-it/app/assets/stylesheets/home.scss */
+.center {
+  text-align: center;
+}
+
+/* line 23, /Users/Carmer/Documents/Turing/projects/work-it/app/assets/stylesheets/home.scss */
+.box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+/* line 28, /Users/Carmer/Documents/Turing/projects/work-it/app/assets/stylesheets/home.scss */
+.form {
+  margin-left: 25%;
+}
+
+/* line 32, /Users/Carmer/Documents/Turing/projects/work-it/app/assets/stylesheets/home.scss */
+#flash_message {
+  background-color: green;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
