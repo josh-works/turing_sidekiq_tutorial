@@ -6,7 +6,5 @@ class MailersController < ApplicationController
   end
 
   def sent
-
   end
-
 end
