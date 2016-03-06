@@ -1,5 +1,5 @@
 class UserNotifier < ActionMailer::Base
-  default :from => 'andrew@turing.io'
+  default :from => 'gob@example.com'
 
   def send_randomness_email(email, thought)
     @email = email
