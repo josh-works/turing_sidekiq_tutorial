@@ -5,4 +5,8 @@ Rails.application.routes.draw do
 
   get "/sent", to: "mailers#sent"
 
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
+
+
 end

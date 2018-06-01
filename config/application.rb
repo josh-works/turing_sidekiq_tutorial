@@ -6,6 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+class Application < Rails::Application
+  # using sidekiq
+  config.active_job.queue_adapter = :sidekiq
+end
+
 module WorkIt
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
