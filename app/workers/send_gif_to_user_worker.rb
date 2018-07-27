@@ -1,7 +1,7 @@
 class SendGifToUserWorker
   include Sidekiq::Worker
 
-  def perform(*args)
-    # Do somethingit
+  def perform(email, thought)
+    UserNotifier.send_randomness_email(email, thought).deliver_now
   end
 end
