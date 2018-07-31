@@ -1,0 +1,7 @@
+:environment: production
+:verbose: false
+:pidfile: ./tmp/pids/sidekiq.pid
+:concurrency:  4
+:queues:
+  - default
+  - ts_delta
